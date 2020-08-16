@@ -47,20 +47,16 @@ nnoremap <leader>= :res +5 <cr>
 nnoremap <leader>- :res -5 <cr>
 
 
-"nnoremap <leader>l <C-w>l <bar> :res 30 <bar> :vertical resize 80 <cr>
-"nnoremap <leader>k <C-w>k <bar> :res 30 <bar> :vertical resize 80 <cr>
-"nnoremap <leader>h <C-w>h <bar> :res 30 <bar> :vertical resize 80 <cr>
-"nnoremap <leader>j <C-w>j <bar> :res 30 <cr>
-
 nmap <leader>w  :NERDTreeRefreshRoot <bar> :Prettier  <cr>
-nmap <leader>q :q<cr>
+nmap q :q<cr>
+nmap ;w :w<cr>
 
 " Python
-  let g:python3_host_prog='/usr/bin/python3'
+let g:python3_host_prog='/usr/bin/python3'
 
 "imap for coc-emmet
 "fun! CompleteHtmlTag()
-  imap ,, <C-y>,
+imap ,, <C-y>,
 "endfun
 
 
