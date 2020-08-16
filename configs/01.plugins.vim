@@ -13,18 +13,30 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'morhetz/gruvbox'
 Plug 'joshdick/onedark.vim'
 Plug 'w0rp/ale'
-"Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 "live server
 Plug 'turbio/bracey.vim'
 "Plug 'airblade/vim-gitgutter'
-"Float term
-Plug 'voldikss/vim-floaterm'
 "C++
 "Plug 'xavierd/clang_complete'
 "View image
-Plug 'ashisha/image.vim'
-"fzf
+"Plug 'ashisha/image.vim'
+
+"=====Front end=======
+
+Plug 'alvan/vim-closetag'
+Plug 'joegesualdo/jsdoc.vim'
+Plug 'elzr/vim-json'
+Plug 'othree/jsdoc-syntax.vim'
+Plug 'ap/vim-css-color'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+"==========UI==========
+Plug 'majutsushi/tagbar'
+"Float term
+Plug 'voldikss/vim-floaterm'
+"
+""fzf
 call plug#end()

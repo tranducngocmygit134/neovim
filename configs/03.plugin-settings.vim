@@ -1,20 +1,37 @@
 "Theme
 syntax enable
-let g:gruvbox_contrast_dark = 'hard'
-let g:solarized_termcolors=256
-"set t_Co=256
+let g:gruvbox_contrast_dark = 'medium'
 set background=dark
 colorscheme gruvbox
-highlight Normal ctermfg=109
+"set termguicolors
+highlight Normal ctermfg=250
 highlight htmlTagName ctermfg=167
+highlight jsFuncArgs ctermfg=214
+highlight jsFunction ctermfg=167
+highlight jsVariableDef ctermfg=175
+highlight jsImport ctermfg=175
+highlight jsExport ctermfg=175
+highlight jsClassKeyword ctermfg=175
+highlight jsFrom ctermfg=175
+highlight jsGlobalNodeObjects ctermfg=175
+highlight jsExtendsKeyword ctermfg=175
+highlight jsBlock ctermfg=214
+highlight jsObjectKey ctermfg=73
+highlight jsObjectProp ctermfg=73
+highlight jsDot ctermfg=175
+highlight xmlAttrib ctermfg=73
+highlight xmlTagName ctermfg=167
+highlight xmlEndTag ctermfg=167
+highlight xmlTag ctermfg=167
+highlight function ctermfg=167
 "248
-highlight Comment ctermfg=238
+highlight Comment ctermfg=245
 "NERDTree
 map <leader>m :NERDTreeToggle<CR>
 let g:NERDTreePatternMatchHighlightFullName = 1
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
-"let NERDTreeDirArrows = 0
+let NERDTreeDirArrows = 0
 let g:NERDDefaultAlign = 'left'
 let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDTreeChDirMode=2
@@ -38,7 +55,7 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 
 "FONT
 let g:enable_italic_font = 1
-let g:enable_bold_font = 1
+"let g:enable_bold_font = 1
 "CLOSE BUFFER
 
 " "ALE
@@ -55,16 +72,15 @@ let g:ale_fixers = {
 \}
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
-" ======= Snippet =========
-" Use <C-l> for trigger snippet expand.
-"=============end snippet==============
+
 " Easymotion
 let g:EasyMotion_smartcase = 1
-map  s <Plug>(easymotion-bd-w)
-nmap s <Plug>(easymotion-overwin-w)
+"map  s <Plug>(easymotion-bd-w)
+"nmap s <Plug>(easymotion-overwin-w)
+nmap s <Plug>(easymotion-overwin-f2)
 
 "====== COC-NVIM ======
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json', 'coc-cmake', 'coc-clangd']
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-json', 'coc-cmake', 'coc-clangd', 'coc-highlight']
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
@@ -84,6 +100,11 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 
 "Fzf
 nmap <leader>f :FZF<cr>
@@ -93,8 +114,14 @@ nmap <leader>f :FZF<cr>
 let g:floaterm_keymap_toggle = '<C-t>'
 let g:floaterm_keymap_kill = '<C-k>'
 let g:floaterm_width=100
-let g:floaterm_height=0.7
+let g:floaterm_height=0.8
 hi FloatermBorder guibg=orange guifg=cyan
 "Emmet
 " path to directory where library can be found
- let g:clang_library_path='/usr/lib/llvm-3.8/lib'
+let g:clang_library_path='/usr/lib/llvm-3.8/lib'
+" Tagbar
+let g:tagbar_width=20
+" Codi
+
+" ===========UI==========
+let g:javascript_plugin_jsdoc = 1

@@ -4,7 +4,6 @@ filetype plugin on
 filetype plugin indent on
 
 
-autocmd BufEnter * :set scroll=10
 syntax on
 
 set belloff=all
@@ -40,17 +39,30 @@ set undolevels=1000
 
 set incsearch
 "imap
-
 nnoremap <leader>l <C-w>l
 nnoremap <leader>k <C-w>k
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
+nnoremap <leader>= :res +5 <cr>
+nnoremap <leader>- :res -5 <cr>
 
-"imap for coc-emmet
-"imap ac <C-y>,
+
+"nnoremap <leader>l <C-w>l <bar> :res 30 <bar> :vertical resize 80 <cr>
+"nnoremap <leader>k <C-w>k <bar> :res 30 <bar> :vertical resize 80 <cr>
+"nnoremap <leader>h <C-w>h <bar> :res 30 <bar> :vertical resize 80 <cr>
+"nnoremap <leader>j <C-w>j <bar> :res 30 <cr>
 
 nmap <leader>w  :NERDTreeRefreshRoot <bar> :Prettier  <cr>
 nmap <leader>q :q<cr>
 
-"vim
+" Python
   let g:python3_host_prog='/usr/bin/python3'
+
+"imap for coc-emmet
+"fun! CompleteHtmlTag()
+  imap ,, <C-y>,
+"endfun
+
+
+"auto command
+"autocmd FileType html, js, jsx :call CompleteHtmlTag()
