@@ -1,0 +1,44 @@
+"diagnostic.enableSign": false,
+
+"NERDTree
+"map <leader>m :NERDTreeToggle<CR>
+"let g:NERDTreePatternMatchHighlightFullName = 1
+"let NERDTreeAutoDeleteBuffer = 1
+"let NERDTreeMinimalUI = 1
+"let NERDTreeDirArrows = 0
+"let g:NERDDefaultAlign = 'left'
+"let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+"let g:NERDTreeChDirMode=2
+"let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules']
+"let g:NERDTreeShowBookmarks=1
+"let g:NERDTreeLimitedSyntax = 1
+"let NERDTreeShowHidden=1
+"let NERDTreeDirArrowExpandable = ""
+"let NERDTreeDirArrowCollapsible = ""
+" Check if NERDTree is open or active
+"function! IsNERDTreeOpen()
+  "return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+"endfunction
+"" Call NERDTreeFind iff NERDTree is active, current window contains a modifiable
+"" file, and we're not in vimdiff
+"function! SyncTree()
+  "if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
+    "NERDTreeFind
+    "wincmd p
+  "endif
+"endfunction
+"" Highlight currently open buffer in NERDTree
+"autocmd BufRead * call SyncTree()
+
+
+
+"explorer.file.column.git.icon.modified": "",
+"explorer.file.column.git.icon.added":"",
+"explorer.file.column.git.icon.deleted":"",
+"explorer.file.column.git.icon.mixed":"",
+"explorer.file.column.git.icon.copied":"",
+"explorer.file.column.git.icon.renamed":"",
+"explorer.file.column.git.icon.ignored":"",
+"explorer.file.column.git.icon.unmerged":"",
+"explorer.file.column.git.icon.untracked":"",
+"explorer.file.column.git.icon.unmodified":"",

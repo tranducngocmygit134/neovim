@@ -1,3 +1,23 @@
 {
-  "diagnostic.enableSign": false
+  "coc.preferences.formatOnSaveFiletypes":["javascript"],
+
+  "explorer.width": 30,
+  "explorer.icon.enableNerdfont": true,
+  "explorer.previewAction.onHover": false,
+  "explorer.icon.expanded":" " ,
+  "explorer.icon.collapsed":" " ,
+  "explorer.keyMappings": {
+    "<cr>": ["expandable?", "expand", "open"],
+    "v": "",
+    "s": "",
+    "E": "",
+    "t":"",
+    "D":"",
+    "e": ""
+  },
+  "explorer.file.showHiddenFiles":true,
+  "explorer.file.root.template": "[icon]  [root]",
+  "explorer.buffer.root.template": "[icon]  [title]",
+  "explorer.buffer.child.template": "[selection | 2][bufnr][selection | 1][name]",
+  "explorer.file.child.template":"[selection | 4][indent][icon | 1][selection | 1][filename][selection | 4][git]"
 }

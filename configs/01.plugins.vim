@@ -1,9 +1,9 @@
 call plug#begin('~/.config/nvim/bundle')
-Plug 'ryanoasis/vim-devicons'
+"Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'  "plugin for nerdtree
+"Plug 'preservim/nerdtree'  "plugin for nerdtree
 Plug 'preservim/nerdcommenter'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'easymotion/vim-easymotion'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'

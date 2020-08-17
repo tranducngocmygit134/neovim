@@ -3,7 +3,6 @@ let mapleader = "\<Space>"
 filetype plugin on
 filetype plugin indent on
 
-
 syntax on
 
 set belloff=all
@@ -30,7 +29,6 @@ set smartindent
 set history=1000
 set hlsearch
 
-
 set relativenumber
 
 set expandtab
@@ -45,20 +43,11 @@ nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
 nnoremap <leader>= :res +5 <cr>
 nnoremap <leader>- :res -5 <cr>
+imap ,, <C-y>,
+nmap m :b
 
-
-nmap <leader>w  :NERDTreeRefreshRoot <bar> :Prettier  <cr>
+nmap <leader>w :Prettier <cr>
 nmap q :q<cr>
-nmap ;w :w<cr>
 
 " Python
 let g:python3_host_prog='/usr/bin/python3'
-
-"imap for coc-emmet
-"fun! CompleteHtmlTag()
-imap ,, <C-y>,
-"endfun
-
-
-"auto command
-"autocmd FileType html, js, jsx :call CompleteHtmlTag()
